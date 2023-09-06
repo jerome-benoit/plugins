@@ -52,7 +52,7 @@ jobs:
           git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}
 
       - name: pnpm install
-        run: pnpm install
+        run: pnpm install --ignore-scripts
 
       - name: Build Packages
         run: pnpm --recursive build
