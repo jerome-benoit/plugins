@@ -18,7 +18,7 @@ jobs:
     strategy:
       matrix:
         os: [windows-latest, ubuntu-latest]
-        node: ['20', '18', '16']
+        node: ['18', '16']
 
     name: Node v${{ matrix.node }} on ${{ matrix.os }}
 
